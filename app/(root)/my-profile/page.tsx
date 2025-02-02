@@ -3,6 +3,7 @@ import BookList from "@/components/BookList";
 import { Button } from "@/components/ui/button";
 import { sampleBooks } from "@/constants";
 import React from "react";
+import dummyBooks from "../../../dummybooks.json";
 
 const Page = () => {
   return (
@@ -17,7 +18,7 @@ const Page = () => {
         <Button>Logout</Button>
       </form>
 
-      <BookList title="Borrowed Books" books={sampleBooks} />
+      <BookList title="Borrowed Books" books={dummyBooks} />
     </>
   );
 };
